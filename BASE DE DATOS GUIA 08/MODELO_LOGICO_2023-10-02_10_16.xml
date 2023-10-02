@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DatabaseLogicalModel VersionId="1.0">
+    <Description></Description>
+    <Counter Value="82"/>
+    <Properties>
+        <Property>
+            <Name>pdf-printer-paper-size</Name>
+            <Value>A4</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-margin-top</Name>
+            <Value>10</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-margin-bottom</Name>
+            <Value>10</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-margin-left</Name>
+            <Value>10</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-margin-right</Name>
+            <Value>10</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-page-orientation</Name>
+            <Value>landscape</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-show-pages</Name>
+            <Value>false</Value>
+        </Property>
+        <Property>
+            <Name>pdf-printer-include-footer</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>reference-notation</Name>
+            <Value>crows-foot</Value>
+        </Property>
+        <Property>
+            <Name>pages-line-color</Name>
+            <Value>#CC0000</Value>
+        </Property>
+        <Property>
+            <Name>show-grid</Name>
+            <Value>false</Value>
+        </Property>
+        <Property>
+            <Name>grid-color</Name>
+            <Value>#D9D9D9</Value>
+        </Property>
+        <Property>
+            <Name>grid-style</Name>
+            <Value>solid</Value>
+        </Property>
+        <Property>
+            <Name>grid-spacing</Name>
+            <Value>2</Value>
+        </Property>
+        <Property>
+            <Name>grid-spacing-units</Name>
+            <Value>cm</Value>
+        </Property>
+        <Property>
+            <Name>grid-subdivisions</Name>
+            <Value>1</Value>
+        </Property>
+    </Properties>
+    <Entities>
+        <Entity Id="entity_12">
+            <Name>apoderados</Name>
+            <Description></Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_13</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_13">
+                    <Name>ID </Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_14">
+                    <Name>Nombres</Name>
+                    <Datatype>Text(60)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_15">
+                    <Name>Apellidos</Name>
+                    <Datatype>Text(60)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_16">
+            <Name>personal administrativo </Name>
+            <Description></Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_17</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_17">
+                    <Name>id</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_18">
+                    <Name>Nombres</Name>
+                    <Datatype>Text(50)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_19">
+                    <Name>Apellidos</Name>
+                    <Datatype>Text(50)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_20">
+                    <Name>horario</Name>
+                    <Datatype>DateTime</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_21">
+            <Name>director</Name>
+            <Description></Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_24</Attribute>
+                    <Attribute>attribute_22</Attribute>
+                    <Attribute>attribute_23</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_22">
+                    <Name>nombre</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_23">
+                    <Name>Apellidos</Name>
+                    <Datatype>Text(50)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_24">
+                    <Name>horario</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_25">
+            <Name>contacto </Name>
+            <Description></Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_26</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_26">
+                    <Name>ID </Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_27">
+                    <Name>nombres</Name>
+                    <Datatype>Varchar(80)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_28">
+                    <Name>email</Name>
+                    <Datatype>Varchar(90)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_29">
+                    <Name>asunto</Name>
+                    <Datatype>Varchar(600)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_30">
+                    <Name>fecha_envio</Name>
+                    <Datatype>DateTime</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_31">
+                    <Name>mensaje</Name>
+                    <Datatype>Text(600)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_32">
+                    <Name>celular</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_33">
+            <Name>Profesor</Name>
+            <Description>a entidad "Profesor" representa a los educadores que imparten cursos a los estudiantes.</Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_35</Attribute>
+                    <Attribute>attribute_34</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_34">
+                    <Name>ID </Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_35">
+                    <Name>Nombre</Name>
+                    <Datatype>Text(50)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_36">
+                    <Name>Apellidos</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_37">
+                    <Name>Especialidad</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_38">
+                    <Name>Correo Electrónico</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_39">
+            <Name>Curso</Name>
+            <Description>La entidad "Curso" representa las asignaturas o materias que se imparten en la institución educativa.</Description>
+            <PrimaryIdentifier>
+                <Name>Curso_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_40</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_40">
+                    <Name> ID</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_41">
+                    <Name>Nombre</Name>
+                    <Datatype>Text(80)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_42">
+                    <Name>Código</Name>
+                    <Datatype>Number(1, 90)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_43">
+                    <Name>Descripción</Name>
+                    <Datatype>Text(80)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_44">
+                    <Name> Horario</Name>
+                    <Datatype>Number(1, 90)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_45">
+            <Name>Aula</Name>
+            <Description>La entidad "Aula" representa los espacios físicos donde se llevan a cabo las clases y actividades educativas.</Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_46</Attribute>
+                    <Attribute>attribute_47</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_46">
+                    <Name> ID del aula</Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_47">
+                    <Name>Capacidad</Name>
+                    <Datatype>Number(1, 100)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_48">
+                    <Name>Ubicación</Name>
+                    <Datatype>Text(80)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_49">
+                    <Name>Equipamiento</Name>
+                    <Datatype>Text(80)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+        <Entity Id="entity_50">
+            <Name>estudiante</Name>
+            <Description></Description>
+            <PrimaryIdentifier>
+                <Name>entity_1_PI</Name>
+                <Attributes>
+                    <Attribute>attribute_51</Attribute>
+                    <Attribute>attribute_52</Attribute>
+                    <Attribute>attribute_53</Attribute>
+                    <Attribute>attribute_54</Attribute>
+                </Attributes>
+            </PrimaryIdentifier>
+            <EntityIdentifiers/>
+            <Attributes>
+                <Attribute Id="attribute_51">
+                    <Name>ID </Name>
+                    <Datatype>Integer</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_52">
+                    <Name>Nombres</Name>
+                    <Datatype>Text(60)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_53">
+                    <Name>fecha de nacimiento </Name>
+                    <Datatype>Number(0, 10)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_54">
+                    <Name>genero </Name>
+                    <Datatype>Text(60)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+                <Attribute Id="attribute_55">
+                    <Name>telefono</Name>
+                    <Datatype>Number(0, 9)</Datatype>
+                    <Mandatory>true</Mandatory>
+                    <Comment></Comment>
+                </Attribute>
+            </Attributes>
+            <InheritanceDetails>
+                <ExclusiveChildren>false</ExclusiveChildren>
+                <Complete>false</Complete>
+                <GenerationStrategy>OneTablePerWholeHierarchy</GenerationStrategy>
+                <DiscriminatorName></DiscriminatorName>
+                <DiscriminatorType>Integer</DiscriminatorType>
+            </InheritanceDetails>
+        </Entity>
+    </Entities>
+    <Associations/>
+    <Inheritances/>
+    <EntityRelationships>
+        <EntityRelationship Id="reference_64">
+            <Name>personal administrativo _director</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_21</Entity_1>
+            <Entity_2>entity_16</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_65">
+            <Name>apoderados_personal administrativo </Name>
+            <Comment></Comment>
+            <Cardinality>1..*</Cardinality>
+            <Entity_1>entity_16</Entity_1>
+            <Entity_2>entity_12</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>true</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_66">
+            <Name>contacto _personal administrativo </Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_16</Entity_1>
+            <Entity_2>entity_25</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_67">
+            <Name>Profesor_director</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_21</Entity_1>
+            <Entity_2>entity_33</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_68">
+            <Name>Curso_Profesor</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_33</Entity_1>
+            <Entity_2>entity_39</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_69">
+            <Name>Aula_estudiante</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_50</Entity_1>
+            <Entity_2>entity_45</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_70">
+            <Name>Aula_Profesor</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_33</Entity_1>
+            <Entity_2>entity_45</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_71">
+            <Name>estudiante_Profesor</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_33</Entity_1>
+            <Entity_2>entity_50</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+        <EntityRelationship Id="reference_72">
+            <Name>Curso_estudiante</Name>
+            <Comment></Comment>
+            <Cardinality>*..*</Cardinality>
+            <Entity_1>entity_50</Entity_1>
+            <Entity_2>entity_39</Entity_2>
+            <Entity_1_Role></Entity_1_Role>
+            <Entity_2_Role></Entity_2_Role>
+            <Entity_1_Dependant>false</Entity_1_Dependant>
+            <Entity_2_Dependant>false</Entity_2_Dependant>
+            <Entity_1_Mandatory>false</Entity_1_Mandatory>
+            <Entity_2_Mandatory>false</Entity_2_Mandatory>
+        </EntityRelationship>
+    </EntityRelationships>
+    <AssociationRelationships/>
+    <Notes/>
+    <Areas/>
+    <EntityDisplays>
+        <EntityDisplay Id="entityDisplay_56">
+            <X>6775.5</X>
+            <Y>6666.5</Y>
+            <Width>200.0</Width>
+            <Height>87.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_12</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_57">
+            <X>6779.5</X>
+            <Y>6810.5</Y>
+            <Width>200.0</Width>
+            <Height>87.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_16</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_58">
+            <X>6777.5</X>
+            <Y>6968.5</Y>
+            <Width>200.0</Width>
+            <Height>73.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_21</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_59">
+            <X>7098.5</X>
+            <Y>6755.5</Y>
+            <Width>200.0</Width>
+            <Height>130.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_25</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_60">
+            <X>7048.5</X>
+            <Y>7056.5</Y>
+            <Width>200.0</Width>
+            <Height>102.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_33</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_61">
+            <X>6745.5</X>
+            <Y>7177.5</Y>
+            <Width>200.0</Width>
+            <Height>102.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_39</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_62">
+            <X>7319.5</X>
+            <Y>6908.5</Y>
+            <Width>201.0</Width>
+            <Height>87.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_45</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+        <EntityDisplay Id="entityDisplay_63">
+            <X>7245.5</X>
+            <Y>7291.5</Y>
+            <Width>237.0</Width>
+            <Height>102.0</Height>
+            <LineColor>#000000</LineColor>
+            <FillColor>#FFFFFF</FillColor>
+            <Entity>entity_50</Entity>
+            <FixedSize>false</FixedSize>
+        </EntityDisplay>
+    </EntityDisplays>
+    <AssociationDisplays/>
+    <InheritanceDisplays/>
+    <EntityRelationshipsDisplays>
+        <EntityRelationshipDisplay Id="referenceDisplay_73">
+            <Color>#000000</Color>
+            <Type>Vertical_2CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>6876.5</X>
+                    <Y>6991.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>6876.5</X>
+                    <Y>6882.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_58</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_57</Entity_2_Display>
+            <Reference>reference_64</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_74">
+            <Color>#000000</Color>
+            <Type>Vertical_2CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>6870.5</X>
+                    <Y>6823.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>6870.5</X>
+                    <Y>6720.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_57</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_56</Entity_2_Display>
+            <Reference>reference_65</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_75">
+            <Color>#000000</Color>
+            <Type>Horizontal_2CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>6952.5</X>
+                    <Y>6846.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7123.5</X>
+                    <Y>6846.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_57</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_59</Entity_2_Display>
+            <Reference>reference_66</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_76">
+            <Color>#000000</Color>
+            <Type>Cross_3CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>6923.5</X>
+                    <Y>7031.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7103.5</X>
+                    <Y>7031.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7103.5</X>
+                    <Y>7108.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_58</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_60</Entity_2_Display>
+            <Reference>reference_67</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_77">
+            <Color>#000000</Color>
+            <Type>Horizontal_4CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>7142.5</X>
+                    <Y>7122.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7020.5</X>
+                    <Y>7122.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7020.5</X>
+                    <Y>7178.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>6897.5</X>
+                    <Y>7178.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_60</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_61</Entity_2_Display>
+            <Reference>reference_68</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_78">
+            <Color>#000000</Color>
+            <Type>Vertical_4CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>7455.5</X>
+                    <Y>7342.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7455.5</X>
+                    <Y>7112.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7323.5</X>
+                    <Y>7112.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7323.5</X>
+                    <Y>6934.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_63</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_62</Entity_2_Display>
+            <Reference>reference_69</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_79">
+            <Color>#000000</Color>
+            <Type>Cross_3CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>7221.5</X>
+                    <Y>7120.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7221.5</X>
+                    <Y>6967.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7495.5</X>
+                    <Y>6967.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_60</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_62</Entity_2_Display>
+            <Reference>reference_70</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_80">
+            <Color>#000000</Color>
+            <Type>Vertical_4CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>7236.5</X>
+                    <Y>7139.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7236.5</X>
+                    <Y>7228.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7247.5</X>
+                    <Y>7228.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7247.5</X>
+                    <Y>7316.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_60</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_63</Entity_2_Display>
+            <Reference>reference_71</Reference>
+        </EntityRelationshipDisplay>
+        <EntityRelationshipDisplay Id="referenceDisplay_81">
+            <Color>#000000</Color>
+            <Type>Horizontal_4CP</Type>
+            <ControlPoints>
+                <ControlPoint>
+                    <X>7289.5</X>
+                    <Y>7324.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7044.5</X>
+                    <Y>7324.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>7044.5</X>
+                    <Y>7259.5</Y>
+                </ControlPoint>
+                <ControlPoint>
+                    <X>6869.5</X>
+                    <Y>7259.5</Y>
+                </ControlPoint>
+            </ControlPoints>
+            <Entity_1_Display>entityDisplay_63</Entity_1_Display>
+            <Entity_2_Display>entityDisplay_61</Entity_2_Display>
+            <Reference>reference_72</Reference>
+        </EntityRelationshipDisplay>
+    </EntityRelationshipsDisplays>
+    <AssociationRelationshipsDisplays/>
+    <NoteDisplays/>
+    <AreaDisplays/>
+</DatabaseLogicalModel>
